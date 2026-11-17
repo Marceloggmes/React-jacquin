@@ -15,7 +15,7 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/produtos" element={<ListaProdutos/>}/>
-                <Route path="/detalheproduto" element={<DetProduto/>}/>
+                <Route path="/detalheproduto/:id" element={<DetProduto/>}/>
                 <Route path="/Login" element={<Login/>}/>
                 <Route path="/AdmProdutos" element={<AdmProduto/>}/>
                 <Route path="*" element={<img className="container-notfound" src= "https://www.dragonforceone.com/front-assets/img/error.gif" alt="Nao encontrado" />}/>

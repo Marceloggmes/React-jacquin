@@ -1,14 +1,22 @@
 import './DetProduto.css';
-import produto from '../../assets/img/produtos/fraisier_classique.png'
+import ava from '../../assets/img/produtos/fraisier_classique.png'
+import { useParams } from 'react-router-dom';
+import { useState } from 'react';
+import type { Produto } from '../../types/Produto';
 
 function DetProduto() {
+
+    const { id } = useParams();
+    const produtoId = Number(id);
+    const[produto, setProdutos] = useState<Produto | null>(null)
     return (
+
         <main>
             <h1>informações do produto</h1>
             <section className="container container_det_prod">
                 <img
                     className="img_prod_web"
-                    src={produto}
+                    src={ava}
                     alt="foto do produto"
                 />
                 <div className="box_det_prod">

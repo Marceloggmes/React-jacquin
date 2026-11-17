@@ -1,14 +1,11 @@
 import { Link } from 'react-router-dom'
-
-
 import iconeUser from '../../assets/icones/user.svg'
 import iconeEstrela from '../../assets/icones/star.svg'
-
 import './card.css'
 
 
-
 type CardProps = {
+    id: number;
     imgProduto: string;
     nome: string;
     descricao: string;
@@ -17,7 +14,8 @@ type CardProps = {
     nota: number;
 }
 
-function Card({ 
+function Card({
+    id, 
     imgProduto,
     nome,
     descricao,
@@ -35,7 +33,7 @@ function Card({
                 />
             </figure>
             <h2>
-                <Link to="/detalheproduto"> {nome} </Link>
+                <Link to={`/detalheproduto/&{id}`}> {nome} </Link>
             </h2>
                 <p className="card_desc">
                 {descricao}
