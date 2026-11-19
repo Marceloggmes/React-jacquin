@@ -33,7 +33,7 @@ function Card({
                 />
             </figure>
             <h2>
-                <Link to={`/detalheproduto/&{id}`}> {nome} </Link>
+                <Link to={`/detalheproduto/${id}`}> {nome} </Link>
             </h2>
                 <p className="card_desc">
                 {descricao}

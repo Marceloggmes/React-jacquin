@@ -6,5 +6,5 @@ export type Produto = {
     precoPorKg: number;
     ativo: boolean;
     imagem: string;
-    categoriasIds: []
+    categoriaIds: Number[]
 }
