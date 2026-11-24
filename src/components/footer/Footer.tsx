@@ -10,7 +10,7 @@ function Footer() {
             <span>© 2026 Bolos do Jacquin. A excelência da patisserie francesa.</span>
             <nav>
                 <a href="https://wwww.instragram.com" target='_blank'>Instagram</a>
-                <a href="https://www.facebook,com" target='_blanks'>Facebook</a>
+                <a href="https://www.facebook.com" target='_blanks'>Facebook</a>
             </nav>
         </div>
     </footer>
